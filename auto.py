@@ -41,7 +41,7 @@ class DaKa:
             login_data = {
                 "username": self.username,
                 "password": __login_passwd_aes(),
-                "captcha": login_form.find("input", id="captcha")['value'],
+                "captcha": login_form.find("input", id="captcha")['name'],
                 "rememberMe": login_form.find("input", id="rememberMe")['value'],
                 "_eventId": login_form.find("input", id="_eventId")['value'],
                 "cllt": login_form.find("input", id="cllt")['value'],
